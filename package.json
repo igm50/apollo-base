@@ -2,7 +2,7 @@
   "name": "apollo-base",
   "version": "0.1.0",
   "description": "Apollo-server template on TypeScript.",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "repository": "https://github.com/igm50/apollo-base.git",
   "author": "jintz <keisuke.igimi@gmail.com>",
   "license": "MIT",
@@ -25,7 +25,10 @@
     "ts-node-dev": "^1.0.0-pre.44"
   },
   "scripts": {
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "build-start": "tsc && node dist/index.js"
   },
   "husky": {
     "hooks": {
