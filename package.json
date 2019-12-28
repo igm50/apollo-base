@@ -28,6 +28,7 @@
     "lint": "eslint src --ext .ts --fix",
     "build": "tsc",
     "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts",
     "build-start": "tsc && node dist/index.js"
   },
   "husky": {
